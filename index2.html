@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=ai-legible&utm_source=comment&utm_medium=referral&utm_id=0da9da63-62ed-464e-bcb4-882271b103d4
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+    <meta name="hosting-provider" content="Netlify">
+    <meta name="netlify-deploy" content="https://netlify.new/?utm_campaign=ai-legible&amp;utm_source=meta&amp;utm_medium=referral&amp;utm_id=0da9da63-62ed-464e-bcb4-882271b103d4">
+    <link rel="icon" href="./logo.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#5566fe" />
+    <meta property="og:title" content="Space Voyager" />
+    <meta property="og:site_name" content="Space Voyager" />
+    <meta property="og:url" content="https://space-voyager.vercel.app/" />
+    <meta property="og:theme" content="#5566fe" />
+    <meta name="description" content="Explore the space at fingertips now" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image:alt" content="Explore the space at fingertips now" />
+    <meta property="og:image" content="https://space-voyager.vercel.app/static/media/logo.2690de2f.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="Explore the space at fingertips now" />
+    <meta name="twitter:title" content="Space Voyager" />
+    <meta name="twitter:creator" content="" />
+    <meta name="twitter:theme-color" content="#5566fe" />
+    <meta name="twitter:url" content="https://space-voyager.vercel.app/" />
+    <meta name="twitter:image" content="https://space-voyager.vercel.app/static/media/logo.2690de2f.png" />
+    <link rel="apple-touch-icon" href="./logo192.png" />
+    <link rel="manifest" href="./manifest.json" />
+    <title>Space Voyager</title>
+    <link href="./static/css/15.a1596f27.chunk.css" rel="stylesheet">
+    <link href="./static/css/main.817ed5b4.chunk.css" rel="stylesheet">
+</head>
+
+<body><noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script>
+        ! function(e) {
+            function r(r) {
+                for (var n, c, u = r[0], i = r[1], l = r[2], p = 0, s = []; p < u.length; p++) c = u[p], Object.prototype.hasOwnProperty.call(a, c) && a[c] && s.push(a[c][0]), a[c] = 0;
+                for (n in i) Object.prototype.hasOwnProperty.call(i, n) && (e[n] = i[n]);
+                for (f && f(r); s.length;) s.shift()();
+                return o.push.apply(o, l || []), t()
+            }
+
+            function t() {
+                for (var e, r = 0; r < o.length; r++) {
+                    for (var t = o[r], n = !0, u = 1; u < t.length; u++) {
+                        var i = t[u];
+                        0 !== a[i] && (n = !1)
+                    }
+                    n && (o.splice(r--, 1), e = c(c.s = t[0]))
+                }
+                return e
+            }
+            var n = {},
+                a = {
+                    14: 0
+                },
+                o = [];
+
+            function c(r) {
+                if (n[r]) return n[r].exports;
+                var t = n[r] = {
+                    i: r,
+                    l: !1,
+                    exports: {}
+                };
+                return e[r].call(t.exports, t, t.exports, c), t.l = !0, t.exports
+            }
+            c.e = function(e) {
+                var r = [],
+                    t = a[e];
+                if (0 !== t)
+                    if (t) r.push(t[2]);
+                    else {
+                        var n = new Promise((function(r, n) {
+                            t = a[e] = [r, n]
+                        }));
+                        r.push(t[2] = n);
+                        var o, u = document.createElement("script");
+                        u.charset = "utf-8", u.timeout = 120, c.nc && u.setAttribute("nonce", c.nc), u.src = function(e) {
+                            return c.p + "static/js/" + ({
+                                1: "reactPlayerDailyMotion",
+                                2: "reactPlayerFacebook",
+                                3: "reactPlayerFilePlayer",
+                                4: "reactPlayerKaltura",
+                                5: "reactPlayerMixcloud",
+                                6: "reactPlayerPreview",
+                                7: "reactPlayerSoundCloud",
+                                8: "reactPlayerStreamable",
+                                9: "reactPlayerTwitch",
+                                10: "reactPlayerVidyard",
+                                11: "reactPlayerVimeo",
+                                12: "reactPlayerWistia",
+                                13: "reactPlayerYouTube"
+                            } [e] || e) + "." + {
+                                1: "56a7e4cb",
+                                2: "fc8a12d3",
+                                3: "2d8fd0c3",
+                                4: "7546dc45",
+                                5: "571ff8f0",
+                                6: "dbc7fbb6",
+                                7: "93a393e7",
+                                8: "8c509e84",
+                                9: "1c3fb0c3",
+                                10: "7eb91456",
+                                11: "2df75606",
+                                12: "8804e30d",
+                                13: "8bde551a"
+                            } [e] + ".chunk.js"
+                        }(e);
+                        var i = new Error;
+                        o = function(r) {
+                            u.onerror = u.onload = null, clearTimeout(l);
+                            var t = a[e];
+                            if (0 !== t) {
+                                if (t) {
+                                    var n = r && ("load" === r.type ? "missing" : r.type),
+                                        o = r && r.target && r.target.src;
+                                    i.message = "Loading chunk " + e + " failed.\n(" + n + ": " + o + ")", i.name = "ChunkLoadError", i.type = n, i.request = o, t[1](i)
+                                }
+                                a[e] = void 0
+                            }
+                        };
+                        var l = setTimeout((function() {
+                            o({
+                                type: "timeout",
+                                target: u
+                            })
+                        }), 12e4);
+                        u.onerror = u.onload = o, document.head.appendChild(u)
+                    } return Promise.all(r)
+            }, c.m = e, c.c = n, c.d = function(e, r, t) {
+                c.o(e, r) || Object.defineProperty(e, r, {
+                    enumerable: !0,
+                    get: t
+                })
+            }, c.r = function(e) {
+                "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
+                    value: "Module"
+                }), Object.defineProperty(e, "__esModule", {
+                    value: !0
+                })
+            }, c.t = function(e, r) {
+                if (1 & r && (e = c(e)), 8 & r) return e;
+                if (4 & r && "object" == typeof e && e && e.__esModule) return e;
+                var t = Object.create(null);
+                if (c.r(t), Object.defineProperty(t, "default", {
+                        enumerable: !0,
+                        value: e
+                    }), 2 & r && "string" != typeof e)
+                    for (var n in e) c.d(t, n, function(r) {
+                        return e[r]
+                    }.bind(null, n));
+                return t
+            }, c.n = function(e) {
+                var r = e && e.__esModule ? function() {
+                    return e.default
+                } : function() {
+                    return e
+                };
+                return c.d(r, "a", r), r
+            }, c.o = function(e, r) {
+                return Object.prototype.hasOwnProperty.call(e, r)
+            }, c.p = "/", c.oe = function(e) {
+                throw console.error(e), e
+            };
+            var u = this["webpackJsonpspace-app"] = this["webpackJsonpspace-app"] || [],
+                i = u.push.bind(u);
+            u.push = r, u = u.slice();
+            for (var l = 0; l < u.length; l++) r(u[l]);
+            var f = i;
+            t()
+        }([])
+    </script>
+    <script src="./static/js/15.a064504f.chunk.js"></script>
+    <script src="./static/js/main.94ca96b3.chunk.js"></script>
+</body>
+
+</html>
